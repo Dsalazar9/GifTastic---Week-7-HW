@@ -1,0 +1,92 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header ' 'images images images images sidebar sidebar';
+    width: 960px;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  #buttons {
+    grid-area: header;
+  }
+  
+  .button {
+    margin: 3px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: rgb(91, 142, 149);
+    color: white;
+  }
+  
+  .addButton{
+    margin: 3px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: rgb(91, 142, 149);
+    color: white;
+  }
+  
+  #image {
+    grid-area: images;
+  }
+  
+  #userinput {
+    grid-area: sidebar;
+    text-align: center;
+  }
+  
+  #gif {
+    display: inline-block;
+    margin: 2px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  label{
+    font-weight: bold;
+    margin: 3px;
+  }
+  
+  @media (max-width: 800px) {
+    .grid-container {
+      width: 750px;
+      grid-template-areas: 'header' 'sidebar' 'images';
+      /* background-color: #2196F3; */
+    }
+    #userinput {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 30px;
+    }
+    #image {
+      margin-top: 10px;
+    }
+    #gif {
+      display: block;
+      text-align: center;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .grid-container {
+      width: 450px;
+      grid-template-areas: 'header' 'sidebar' 'images';
+      /* background-color: #2196F3; */
+    }
+    #userinput {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 30px;
+    }
+    #image {
+      margin-top: 10px;
+    }
+    #gif {
+      display: block;
+      text-align: center;
+      margin: auto;
+    }
+  
+  }
